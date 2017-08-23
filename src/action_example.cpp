@@ -8,16 +8,16 @@
 
 class ActionTurn : public ArAction {
 public:
-    ActionTurn(double turnThreshold, double turnAmount) {
-        this->turnThreshold = turnThreshold;
-        this->turnAmount = turnAmount;
-    }
+ActionTurn(double turnThreshold, double turnAmount) {
+    this->turnThreshold = turnThreshold;
+    this->turnAmount = turnAmount;
+}
 
-    virtual ~ActionTurn() {}
+virtual ~ActionTurn() {}
 
-    void setRobot(ArRobot* robot) {
-        robot->findRangeDevice("sonar");
-    }
+void setRobot(ArRobot* robot) {
+    robot->findRangeDevice("sonar");
+}
 };
 
 
